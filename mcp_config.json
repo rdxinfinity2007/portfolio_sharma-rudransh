@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "supabase": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@supabase/mcp-server-supabase@latest",
+                "--access-token",
+                "YOUR_SUPABASE_ACCESS_TOKEN" // Replace with your actual Supabase access token
+            ]
+        },
+        "vercel": {
+            "command": "npx",
+            "args": [
+                "mcp-remote",
+                "https://mcp.vercel.com"
+            ]
+        }
+    }
+}
